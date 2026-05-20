@@ -13,7 +13,7 @@ y = np.linspace(y_min, y_max, height)
 c = x[np.newaxis, :] + 1j*y[:, np.newaxis]
 
 print(f"GRID SHAPE: {c.shape}")
-print(f"sample c: {c[0,0]}")
+print(f"sample c: {c[0,0]}, {c[height//2, width//2]}")
 
 def mandelbrot(c, max_iter):
     z=np.zeros_like(c)
